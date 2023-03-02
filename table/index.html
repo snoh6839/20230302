@@ -14,6 +14,12 @@
             border: 1px solid blueviolet;
             padding: 5px 0;
         }
+        .col1 {
+            background-color: yellow;
+        }
+        col:nth-child(2){
+            background-color: green;
+        }
     </style>
 </head>
 <body>
@@ -48,12 +54,56 @@
                 <td>80점</td>
             </tr>
         </tbody>
-        <tfoot>
+        <!-- <tfoot>
             <tr>
                 <td>foot1</td>
                 <td>foot2</td>
             </tr>
-        </tfoot>
+        </tfoot> thead,tbody,tfoot은 코드 가시성때문에 쓰는거라 빼도 됨-->        
+    </table>
+    <table>
+        <caption>학급 성적표</caption>
+        <colgroup>
+            <!-- <col style="background-color:blueviolet;"> -->
+            <col class="col1">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th>반</th>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>과학</th>
+        </tr>
+        <tr>
+            <td>1반</td>
+            <td>홍길동</td>
+            <td>100</td>
+            <td>80</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>1반</td>
+            <td>김철수</td>
+            <td>80</td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>평균</td>
+            <td></td>
+            <td>80.5</td>
+            <td>80.5</td>
+            <td>90.5</td>
+            <td>70.5</td>
+        </tr>
     </table>
 </body>
 </html>
