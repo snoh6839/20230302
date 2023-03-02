@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tag</title>
     <style>
-        table {border-collapse: collapse; margin-bottom: 30px;}
+        table {border-collapse: collapse; }
         table, td {border: 1px solid red;}
         th {
             background-color: blueviolet;
@@ -32,18 +32,28 @@
     </table>
     <table>
         <caption>반 성적</caption>
-        <tr>
-            <th>1번</th>
-            <th>2번</th>
-        </tr>
-        <tr>
-            <td>80점</td>
-            <td>90점</td>
-        </tr>
-        <tr>
-            <td>90점</td>
-            <td>80점</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>1번</th>
+                <th>2번</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80점</td>
+                <td>90점</td>
+            </tr>
+            <tr>
+                <td>90점</td>
+                <td>80점</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>foot1</td>
+                <td>foot2</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
