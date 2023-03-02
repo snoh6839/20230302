@@ -12,10 +12,11 @@
             background-color: blueviolet;
             color: aliceblue;
             border: 1px solid blueviolet;
-            padding: 5px 0;
         }
+        td,th {padding: 10px;}
         .col1 {
             background-color: yellow;
+            width: 60px;
         }
         col:nth-child(2){
             background-color: green;
@@ -81,7 +82,7 @@
             <th>과학</th>
         </tr>
         <tr>
-            <td>1반</td>
+            <td rowspan="2">1반</td>
             <td>홍길동</td>
             <td>100</td>
             <td>80</td>
@@ -89,7 +90,6 @@
             <td>90</td>
         </tr>
         <tr>
-            <td>1반</td>
             <td>김철수</td>
             <td>80</td>
             <td>100</td>
@@ -97,8 +97,7 @@
             <td>80</td>
         </tr>
         <tr>
-            <td>평균</td>
-            <td></td>
+            <td colspan="2">평균</td>
             <td>80.5</td>
             <td>80.5</td>
             <td>90.5</td>
